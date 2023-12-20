@@ -2,8 +2,7 @@
 In this lab session you will learn how to implement the schedulability tests for:
 
   * Liu and Layland Bound
-  * Time Demand AnalysiW
-  * Hyperbolic Bound
+  * Time Demand Analysis
 
 All Tasks are periodic, preemptable, fixed priority Tasks with implicit Deadlines.
 

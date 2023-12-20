@@ -63,17 +63,17 @@ def main():
             #       " fulfills necessary the Liu and Layland Bound!")
     #print()
 
-    print("Starting Hyperbolic bound analysis!")
-    stubHB = []
-    for _ in range(shape[0]):
-        stubHB.append(False)
-    HBresults = np.array(stubHB)
-    for i in range(shape[0]):
-        if HB.test(tasksets[i]):
-            HBresults[i] = True
-            # print("Task Set: " + str(i) +
-            #       " fulfills the sufficient Hyperbolic Bound!")
-    #print()
+    # print("Starting Hyperbolic bound analysis!")
+    # stubHB = []
+    # for _ in range(shape[0]):
+    #     stubHB.append(False)
+    # HBresults = np.array(stubHB)
+    # for i in range(shape[0]):
+    #     if HB.test(tasksets[i]):
+    #         HBresults[i] = True
+    #         # print("Task Set: " + str(i) +
+    #         #       " fulfills the sufficient Hyperbolic Bound!")
+    # #print()
 
     print("Starting Time Demand Analysis!")
     stubTDA = []
@@ -86,9 +86,11 @@ def main():
             #print("Task Set: " + str(i) + " is feasible by TDA analysis!")
 
     #print results
-    headers = ["#", "U", "LLB", "HB", "TDA"]
+    #headers = ["#", "U", "LLB", "HB", "TDA"]
+    headers = ["#", "U", "LLB", "TDA"]
     # Generate the table in fancy format.
-    results = np.array((np.arange(shape[0]), U, LLBresults, HBresults, TDAresults)).T
+    #results = np.array((np.arange(shape[0]), U, LLBresults, HBresults, TDAresults)).T
+    results = np.array((np.arange(shape[0]), U, LLBresults, TDAresults)).T
     table = tabulate(results, headers, tablefmt="fancy_grid")
     print(table)
 
