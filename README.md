@@ -34,9 +34,14 @@ options:
   --n N       Number of tasks per set.
 ```
 
+Example:
+``` python SchedTest.py --i task_sets/10tasks.txt --n 10 ```
+
 N is always and defaults to 10, for our input files.
 
 ## Correct outputs for evaluation
+For the current version the Hyperbolic Bound (HB) is removed!
+
 ```
 10Tasks
 ╒═════╤══════╤═══════╤══════╤═══════╕
