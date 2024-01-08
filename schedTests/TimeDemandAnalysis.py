@@ -20,4 +20,9 @@ def Workload(tasks, i):
 
 #The Time Demand Analysis Test
 def test(tasks):
+    #Sorting Taskset by Period/Deadline
+    #This makes implementing TDA a lot easier
+    shape = tasks.shape
+    sortedtasks = tasks[tasks[:, 0].argsort()]
+
     return False

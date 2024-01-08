@@ -37,7 +37,7 @@ options:
 Example:
 ``` python SchedTest.py --i task_sets/10tasks.txt --n 10 ```
 
-N is always and defaults to 10, for our input files.
+N has to be set always to the number of tasks in the task set. Please use N=100 for the 100tasks.txt file.
 
 ## Correct outputs for evaluation
 For the current version the Hyperbolic Bound (HB) is removed!
